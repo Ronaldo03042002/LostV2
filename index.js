@@ -107,7 +107,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `*Oiee @${num.split('@')[0]}\ seja bem vindo(a) ao grupo *${mdata.subject}* Siga as regras e evite ser banido do grupo, espero que faça muitas amizades por aqui*`
+				teks = `*Oiee @${num.split('@')[0]}\ seja bem vindo(a) ao grupo *${mdata.subject}* *Siga as regras e evite ser banido do grupo, espero que faça muitas amizades por aqui*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -730,7 +730,7 @@ case 'lofi':
 						pp = await client.getProfilePicture(id)
 						buffer = await getBuffer(pp)
 						client.updateProfilePicture(botNumber, buffer)
-						mentions(`Foto profile Berhasil di perbarui menggunakan foto profile @${id.split('@')[0]}`, [jid], true)
+						mentions(`Foto do perfil atualizada com sucesso, usando a foto do perfil de @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
 						reply(' *Algo deu errado* ')
 					}
