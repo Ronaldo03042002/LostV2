@@ -466,7 +466,7 @@ case 'lofi':
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					prefix = args[0]
-					reply(`Sigla de comandos alterada para : ${prefix}*`)
+					reply(`Sigla de comandos alterada para : ${prefix}`)
 					break 	
 				case 'hilih': 
 					if (args.length < 1) return reply('*Qual o seu texto?*')
@@ -722,7 +722,7 @@ case 'lofi':
 				case 'clonar':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(' *Quem é você*?') 
-					if (args.length < 1) return reply(' *Foto do membro clonada!* ')
+					if (args.length < 1) return reply(' *Marque a foto do membro que você deseja clonar meu senhor!* ')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('✅')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
 					let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
