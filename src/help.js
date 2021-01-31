@@ -4,7 +4,7 @@ const help = (prefix) => {
 Criador do Bot:Ronaldo Silva
 Tel:wa.me/+557196834782
 
-Menu de comando↓
+•Menu de comandos↓
 ╔═════════════════
 ║ Comandos listados, espero que goste.
 ╠═════════════════
@@ -30,7 +30,7 @@ Menu de comando↓
 ║├──> Promover a admin
 ║├────────────────
 ║├> ${prefix}demote @adm
-║├> ${prefix}promover @adm
+║├> ${prefix}rebaixar @adm
 ║├──> Rebaixar a membro
 ║├────────────────
 ║├> ${prefix}grup abrir/fechar
