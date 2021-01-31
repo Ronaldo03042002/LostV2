@@ -4,7 +4,7 @@ const help = (prefix) => {
 Criador do Bot:Ronaldo Silva
 Tel:wa.me/+557196834782
 
-Menu de comando↓
+•Menu de comandos↓
 ╔═════════════════
 ║ Comandos listados, espero que goste.
 ╠═════════════════
